@@ -4,43 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>A K</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <!-- Profile -->
         <div class="profile">
-            <h2>Hello there, I'm Abhijith krishna A K</h3>
-            <h3>Welcome to my profile,<br><br>
-                Myself I'm a Software developer who is currently working as a freelancer, here you can see all my latest works, services i provide and more... </h4>
+            <h2>Hello there, I'm Abhijith Krishna <span>&#x1F44B;</span></h3>
+            <h3>Welcome to my portfolio,<br><br>
+                Myself I'm a passionate Software developer who is currently working as a freelancer,
+                here you can see all my latest works, services i provide and more... </h3>
         </div>
     </header>
-    <section>
-        <Nav>
-            <!-- Navigations -->
-        </Nav>
+
+    <section class="services">
+        <nav>
+            <ul id="second-nav" class="second-nav">
+                <li><a href="#" data-page="projects.html">Projects</a></li>
+                <li><a href="#" data-page="services.html">Services</a></li>
+                <li><a href="#" data-page="skills.html">Skills</a></li>
+            </ul>
+        </nav>
+        <!-- Projects Skills Services -->
+        <div>
+            <iframe id="content-frame" src="projects.html"  onload="resizeIframe(this)" frameborder="0" scrolling="no"></iframe>
+        </div>
     </section>
-    <section>
+    
+
+    <section class="about">
         <!-- About me -->
-        
-    </section>
-    <section>
-        <!-- Projects -->
-    </section>
-
-    <section>
-        <!-- Skills -->
-    </section>
-
-    <section>
-        <!-- Services -->
-    </section>
-
-    <section>
-        <!-- Education -->
+        <h2>About Me:</h2>
+        <h3>I am a software developer with a passion for building web and mobile applications. I specialize in <br>
+             full-stack development with expertise in MERN stack, Python Django,
+            and Flutter. Additionally,<br> I have a strong foundation in Python, C, C++, and Java.</h3>
     </section>
 
     <section>
@@ -49,9 +57,9 @@
 
     <footer>
         <!-- Links -->
+        <p>&copy; 2024 Abhijith Krishna</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
