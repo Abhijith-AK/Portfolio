@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    flex:none;
+    background-color: rgba(8, 8, 8, 0.801);
+    font-family: 'Times New Roman', Times, serif;
+}
+.profile{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #ffffff;
+    margin-left: 20vb;
+    margin-top: 10vb;
+    align-items: start;
+    
+}
