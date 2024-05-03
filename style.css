@@ -4,13 +4,15 @@ nav ul {
 }
 
 header nav {
-    text-align: right; /* Align first nav to the right */
+    text-align: right;
+    /* Align first nav to the right */
     margin-top: 10px;
     margin-right: 20vb;
 }
 
 section nav {
-    text-align: center; /* Align second nav to the center */
+    text-align: center;
+    /* Align second nav to the center */
     width: 100%;
     padding-top: 0.5px;
     padding-bottom: 0.5px;
@@ -36,7 +38,8 @@ nav ul li a:hover {
 nav ul.second-nav {
     list-style-type: none;
     padding: 0;
-    background-color: #302d2d; /* Set background color */
+    background-color: #302d2d;
+    /* Set background color */
 }
 
 section nav ul.second-nav li {
@@ -50,7 +53,8 @@ section nav ul.second-nav li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    padding: 8px; /* Add padding */
+    padding: 8px;
+    /* Add padding */
 }
 
 section nav ul.second-nav li a:hover {
@@ -58,13 +62,14 @@ section nav ul.second-nav li a:hover {
 }
 
 .second-nav li.active a {
-    color: #ffffff; 
+    color: #ffffff;
     background-color: rgba(8, 8, 8, 0.801);
-    font-weight: bold; 
-    padding: 8px; /* Add padding */
+    font-weight: bold;
+    padding: 8px;
+    /* Add padding */
 }
 
-body{
+body {
     margin: 0;
     top: 0;
     bottom: 0;
@@ -72,38 +77,42 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.profile{
+.profile {
 
     margin: 20vb;
     align-items: start;
-    
+
 }
 
-.profile h2{
+.profile h2 {
     margin-bottom: 40px;
 }
 
-h1,h2,h3,h4,p{
+h1,
+h2,
+h3,
+h4,
+p {
     font-style: italic;
     color: #ffffff;
     font-family: monospace;
 }
 
-h2{
+h2 {
     font-size: xx-large;
     text-align: center;
 }
 
-h3{
+h3 {
     font-size: x-large;
 }
 
-p{
+p {
     font-size: larger;
 }
 
-.services{
-    margin: 20vb;
+.services {
+    margin: 10vb;
 }
 
 .about {
@@ -111,40 +120,97 @@ p{
 
 }
 
-.about h2{
+.about h2 {
     text-align: justify;
     margin-left: 5vb;
 }
 
-.about h3{
+.about h3 {
     margin-left: 10vb;
 }
 
-iframe{
+iframe {
     width: 100%;
     height: auto;
     margin-top: 0;
     overflow: hidden;
 }
 
-.skills-container{
+.projects {
+    padding: 2vb;
+
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    width: 100%;
+    height: 300px;
+    background-color: #3330305b;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.project-title {
+    padding: 10px;
+}
+
+.project-title h4 {
+    font-size: x-large;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.project-body {
+    margin-left: 20px;
+}
+
+.project-links {
+    margin-left: 20px;
+}
+
+.project-card a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: blue;
+}
+
+.project-card hr {
+    width: 95%;
+    margin-top: 30px;
+}
+
+.skills {
+    margin-left: 20px;
+
+}
+
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
 }
 
-.skill-card{
+.skill-card {
     width: calc(25% - 20px);
     height: 450px;
     margin: 10px;
-    background-color: #afa8a8;
+    background-color: #3330305b;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-.skill-image{
+.skill-image {
     width: 100%;
     height: 300px;
     align-items: center;
@@ -153,11 +219,11 @@ iframe{
     border-top-right-radius: 10px;
 }
 
-.skill-details{
+.skill-details {
     padding: 15px;
 }
 
-.skill-name{
+.skill-name {
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -167,9 +233,45 @@ iframe{
     margin: 0;
 }
 
+.service {
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-card {
+    width: 46%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #3330305b;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+}
+
+
 
 footer {
-    text-align: center; 
+    text-align: center;
     margin-top: 20px;
 }
 

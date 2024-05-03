@@ -47,3 +47,36 @@ function setActiveLink(page) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        const formData = new FormData(form);
+
+        // Send form data to Formspree
+        fetch(form.action, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json'
+            },
+            body: formData
+        })
+        .then(response => {
+            if (response.ok) {
+                // Form submitted successfully
+                alert('Message sent!'); // Display success message
+                form.reset(); // Reset form fields
+            } else {
+                throw new Error('Error sending message.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again later.'); // Display error message
+        });
+    });
+});
