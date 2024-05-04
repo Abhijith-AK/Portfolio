@@ -7,10 +7,13 @@
     <title>A K</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
 
+   
+    
     <header>
         <nav>
             <ul>
@@ -54,23 +57,75 @@
             and Flutter. Additionally,<br> I have a strong foundation in Python, C, C++, and Java.</h3>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
         <!-- Contact -->
         <h2>Contact Me:</h2>
-        <form action="https://formspree.io/f/meqynrwr" method="POST"  class="contact-form">
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
-        </form>
+        <p>Submit the below form and I will get in touch with you.</p>
+        <div>
+            <form action="https://formspree.io/f/meqynrwr" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label>
+                        Your email: </label>
+                    <input type="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label>
+                        Your message: </label>
+                    <textarea name="message"></textarea>
+                </div>
+                <!-- your other form fields go here -->
+                <div class="button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-whatsapp">
+            <p>Alternatively, you can reach me via WhatsApp:</p>
+            <!-- WhatsApp button -->
+            <a href="https://wa.me/+917558969793?text=Hello%20Abhijith,%20I%20found%20your%20portfolio%20and%20I%20would%20like%20to%20chat" target="_blank" class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i>  Chat on WhatsApp</a>
+        </div>
     </section>
 
+    <section class="social-media">
+        <!-- Social Media -->
+        <h2 >Connect with Me:</h2>
+        <ul class="social-links">
+            <li>
+                <a href="https://github.com/Abhijith-AK" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                    <div class="slide">
+                        <p>Visit My GitHub Repository</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/Abhijith_A_K_" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                    <div class="slide">
+                        <p>Explore My Twitter Feed</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/abhijith-krishna-1a5945294" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                    <div class="slide">
+                        <p>Connect with Me on LinkedIn</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <div id="scroll-to-top" class="hidden">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+        
     <footer>
         <!-- Links -->
         <p>&copy; 2024 Abhijith Krishna</p>
